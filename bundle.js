@@ -8,7 +8,7 @@ QRCode = require('davidshimjs-qrcodejs');
 makeQR = function(className, content, dimension) {
   var element;
   element = document.querySelector("." + className);
-  dimension = 700;
+  dimension = 200;
   return new QRCode(element, {
     text: content,
     width: dimension,
@@ -654,7 +654,7 @@ adress = privateKey.toAddress();
 
 makeQR("qr_private_key", privateKey.toWIF());
 
-makeQR("qr_address", adress);
+makeQR("qr_address", adress.toString());
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/paperbank.js","/")
 },{"./make-qr":1,"_process":184,"bitcore-lib":4,"buffer":127}],4:[function(require,module,exports){

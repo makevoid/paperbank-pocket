@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Helvetica, Arial, Verdana, sans-serif;
   text-align: center;
+  font-size: 45%;
 }
 
 img {
@@ -11,6 +12,14 @@ img {
 .main {
   margin: 0 auto;
   width: 55%;
-  padding-top:    70px;
-  margin-bottom: 200px;
+  padding-top:    10px;
+  margin-bottom: 120px;
+}
+
+section.private_key {
+  padding-top: 20px;
+}
+
+p {
+  font-size: 75%;
 }

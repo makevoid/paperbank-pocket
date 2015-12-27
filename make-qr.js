@@ -6,7 +6,7 @@ QRCode = require('davidshimjs-qrcodejs');
 makeQR = function(className, content, dimension) {
   var element;
   element = document.querySelector("." + className);
-  dimension = 700;
+  dimension = 200;
   return new QRCode(element, {
     text: content,
     width: dimension,
