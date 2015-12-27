@@ -70,3 +70,8 @@ Also the best thing is that they can be laminated with a standard hot laminator 
 I found it awesome!
 
 Also, after I'm done with creating my paper wallets I bring it with me to use it with my phone basically as a Polaroid. I take photos of friends and give them the photo as a present. The cool thing is that the software from the one I have lets you embed QR codes, so I upload the picture I took on S3 and put the link in the qr code on the photo itself, pretty cool, but enough for the promo of this gadget, let's make paper wallets!
+
+
+original paperbank project: http://paperbank.it
+
+#### by [@makevoid](https://twitter.com/makevoid)
