@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "bitcore-lib": "^0.13.11"
-  }
+    "bitcore-lib": "^0.13.11",
+    "davidshimjs-qrcodejs": "0.0.2"
+  },
+  "repository": "https://github.com/makevoid/paperbank-pocket", 
+  "license": "MIT"
 }
