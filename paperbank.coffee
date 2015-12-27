@@ -1,23 +1,25 @@
-# install coffee-script
+# install coffee-script and browserify
 #
-# npm i -g coffee-script
+# npm i -g coffee-script browserify
 
 # run:
 #
-# coffee -c paperbank.coffee && node paperbank.js
-#
-# coffee -c paperbank.coffee && browserify --fast paperbank.js -o bundle.js
+# coffee -b -c paperbank.coffee && browserify --fast paperbank.js -o bundle.js
 
-# require 'davidshimjs-qrcodejs'
-# QRCode = require 'QRCode'
-QRCode = require 'davidshimjs-qrcodejs'
+# require libs
+makeQR  = require './make-qr'
 bitcore = require 'bitcore-lib'
 
+# generate key, derive address
+privateKey = new bitcore.PrivateKey
+adress     = privateKey.toAddress()
 
-element = document.querySelector ".qr_address"
+makeQR(
+  "qr_private_key",
+  privateKey.toWIF(),
+)
 
-qrcode = new QRCode element,
-	text: "http://jindo.dev.naver.com/collie",
-	width:  128,
-	height: 128,
-	# correctLevel : QRCode.CorrectLevel.H
+makeQR(
+  "qr_address",
+  privateKey.toWIF(),
+)
