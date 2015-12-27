@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.main {
+  margin: 0 auto;
+  width: 55%;
+  padding-top:    70px;
+  margin-bottom: 200px;
+}

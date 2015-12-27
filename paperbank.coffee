@@ -21,5 +21,5 @@ makeQR(
 
 makeQR(
   "qr_address",
-  privateKey.toWIF(),
+  adress,
 )

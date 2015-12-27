@@ -11,4 +11,4 @@ adress = privateKey.toAddress();
 
 makeQR("qr_private_key", privateKey.toWIF());
 
-makeQR("qr_address", privateKey.toWIF());
+makeQR("qr_address", adress);
