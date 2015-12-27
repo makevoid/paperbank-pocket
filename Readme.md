@@ -12,6 +12,30 @@ Other cool things used:
 
 Then just plain HTML and CSS, screenshot and print how many Paper Keys / Paper Wallets you like!
 
+### [Video](http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket.mp4)
+
+<a href="http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket.mp4">
+![Paperbank Pocket video - play](http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket_play_small.png)
+</a>
+
+### Screenshots
+
+1 - Load the app, a key has been generated for you, now **take a screenshot** and **send it to the Printer app**
+
+<a href="http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket1.mp4">
+![step1 - screenshot](http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket_small1.png)
+</a>
+<a href="http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket2.mp4">
+![step2 - screenshot](http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket_small2.png)
+</a>
+<a href="http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket3.mp4">
+![step3 - screenshot](http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket_small3b.png)
+</a>
+
+2 - Select "Fit Page" (instead of "Fill")
+
+3 - Start to print!
+
 ### Use this project:
 
 #### http://url.mkv.net/soon
