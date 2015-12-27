@@ -71,6 +71,16 @@ I found it awesome!
 
 Also, after I'm done with creating my paper wallets I bring it with me to use it with my phone basically as a Polaroid. I take photos of friends and give them the photo as a present. The cool thing is that the software from the one I have lets you embed QR codes, so I upload the picture I took on S3 and put the link in the qr code on the photo itself, pretty cool, but enough for the promo of this gadget, let's make paper wallets!
 
+Remember that it's best to generate the key while the devices are off the internet and to delete all the copies of the screenshot taken on the device.
+
+### TODO:
+
+Features coming:
+
+- BIP38
+
+like in the original paperbank.
+
 
 original paperbank project: http://paperbank.it
 
