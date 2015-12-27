@@ -63,7 +63,7 @@ I got mine for ~70 gbp (99$) on aliexpress: http://www.aliexpress.com/item/Pocke
 
 I reckon the price of those will drop even more next years.
 
-The paper is not cheap () but the good thing is that the ink is inside the paper. You have to use Zink paper of the same size of the printer.
+The paper is not cheap (10-20p per sheet) but the good thing is that the ink is inside the paper, so you just need to get the paper. You have to use Zink paper of the same size of the printer.
 
 Also the best thing is that they can be laminated with a standard hot laminator which you can't really do with thermal paper because it will burn (it will become black).
 
