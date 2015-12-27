@@ -1,6 +1,6 @@
 # Paperbank Pocket
 
-### Paperbank-style paper wallets using a Pocket Photo printer
+### Paper wallets / keychains using a Pocket Photo printer
 
 Now that Pocket Photo printers have become cheaper I decided to build a Paperbank-like Wallet / Keychain Generator using bitcore-lib and the qrcode library.
 
