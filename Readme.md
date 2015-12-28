@@ -36,11 +36,9 @@ Then just plain HTML and CSS, screenshot and print how many Paper Keys / Paper W
 
 3 - Start to print!
 
-### Use this project:
+### Try / Use this project:
 
-#### http://url.mkv.net/soon
-
-soon!
+#### http://pocket.paperbank.it/
 
 or
 
