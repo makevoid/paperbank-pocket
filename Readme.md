@@ -51,6 +51,25 @@ Then host it somewhere (for example with `python -m SimpleHTTPServer`, then visi
 
 Enjoy!
 
+### Setup
+
+    npm install
+
+### Rebuild
+
+    ./build.sh
+
+### Host (run)
+
+    python -m SimpleHTTPServer 3000
+
+then visit <http://localhost:3000>
+or (bind to any address):
+
+    python -c 'import BaseHTTPServer as bhs, SimpleHTTPServer as shs; bhs.HTTPServer((\"0.0.0.0\", 3000), shs.SimpleHTTPRequestHandler).serve_forever()'
+
+or simply open `index.html`
+
 ---
 
 ### Other Infos on Why
