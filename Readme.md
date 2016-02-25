@@ -108,6 +108,6 @@ original paperbank project: http://paperbank.it
 
 ps
 
-advices to new programmers that want to create bitcoin apps: put a project down (php, html, js wathever but put it down on code on a repo), then leave it alone, look at bitcoin for a while then after some time look again at your project, you will see the possibility of modifying it to adapt it to new purposes 
+advices to new programmers that want to create bitcoin apps: put a project down (php, html, js wathever but put it down on code on a repo), then leave it alone, look at bitcoin for a while then after some time look again at your project, you will see the possibilities in modifiying it, to adapt your app, your project, your code to new purposes !
 
 notes to other people: bluetooth controlled printer + web browser is an infinitely, incommensurable thing, check more in the pbd book (soon™...)
