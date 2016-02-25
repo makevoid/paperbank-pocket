@@ -102,3 +102,10 @@ like in the original paperbank.
 original paperbank project: http://paperbank.it
 
 #### by [@makevoid](https://twitter.com/makevoid)
+
+
+----
+
+ps
+
+advices to new programmers: bluetooth controlled printer + web browser is an infinitely, incommensurable thing, check more in the pbd book (soon™...)
