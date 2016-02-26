@@ -82,9 +82,9 @@ I reckon the price of those will drop even more next years.
 
 The paper is not cheap (10-20p per sheet) but the good thing is that the ink is inside the paper, so you just need to get the paper. You have to use Zink paper of the same size of the printer.
 
-Also the best thing is that they can be laminated with a standard hot laminator which you can't really do with thermal paper because it will burn (it will become black).
-
 I found it awesome!
+
+Bare in mind it's still thermal paper so don't leave under direct sunlight and you don't have to expose it under heat, you can laminate it some way but not with hot lamination, to make it water-resistant.
 
 Also, after I'm done with creating my paper wallets I bring it with me to use it with my phone basically as a Polaroid. I take photos of friends and give them the photo as a present. The cool thing is that the software from the one I have lets you embed QR codes, so I upload the picture I took on S3 and put the link in the qr code on the photo itself, pretty cool, but enough for the promo of this gadget, let's make paper wallets!
 
