@@ -50,6 +50,8 @@ Then host it somewhere (for example with `python -m SimpleHTTPServer`, then visi
 Enjoy!
 
 ### Setup
+    
+    npm i -g uglify
 
     npm install
 
