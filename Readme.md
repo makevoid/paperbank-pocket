@@ -51,7 +51,7 @@ Enjoy!
 
 ### Setup
     
-    npm i -g uglify
+    npm i -g uglifyjs
 
     npm install
 
