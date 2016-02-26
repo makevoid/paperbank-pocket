@@ -12,9 +12,9 @@ Other cool things used:
 
 Then just plain HTML and CSS, screenshot and print how many Paper Keys / Paper Wallets you like!
 
-### [Video](http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket.mp4)
+### [Video](https://vimeo.com/156742301)
 
-<a href="http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket.mp4">
+<a href="https://vimeo.com/156742301">
 ![Paperbank Pocket video - play](http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket_play_small.png)
 </a>
 
