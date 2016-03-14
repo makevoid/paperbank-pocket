@@ -14,6 +14,7 @@ bitcore = require 'bitcore-lib'
 privateKey = new bitcore.PrivateKey
 adress     = privateKey.toAddress()
 
+
 makeQR(
   "qr_private_key",
   privateKey.toWIF(),
@@ -23,3 +24,9 @@ makeQR(
   "qr_address",
   adress.toString(),
 )
+
+keyElem  = document.querySelector ".private_key_label"
+addrElem = document.querySelector ".address_label"
+
+keyElem.innerHTML  = privateKey.toWIF()
+addrElem.innerHTML = adress.toString()

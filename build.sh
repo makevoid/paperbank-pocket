@@ -9,3 +9,4 @@ coffee -b -c make-qr.coffee   &&              \
 
 
 /usr/bin/time -f "minified in min %E seconds" uglifyjs bundle.js > bundle.min.js
+# cp  bundle.js bundle.min.js # in dev

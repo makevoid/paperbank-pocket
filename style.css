@@ -10,10 +10,14 @@ img {
 }
 
 .main {
-  margin: 0 auto;
-  width: 55%;
   padding-top:    10px;
   margin-bottom: 120px;
+  width: 100%;
+}
+
+.main img {
+  width: 50%;
+  margin: 0 auto;
 }
 
 section.private_key {
@@ -22,4 +26,12 @@ section.private_key {
 
 p {
   font-size: 75%;
+}
+
+div.label {
+  padding-top:  15px;
+  word-wrap: break-word;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
 }
