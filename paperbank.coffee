@@ -1,6 +1,10 @@
-# install coffee-script and browserify
+# install coffee-script and browserify:
 #
 # npm i -g coffee-script browserify
+
+# install dependencies:
+#
+# npm i
 
 # run:
 #
@@ -9,24 +13,28 @@
 # require libs
 makeQR  = require './make-qr'
 bitcore = require 'bitcore-lib'
+Bip38   = require 'bip38'
 
 # generate key, derive address
 privateKey = new bitcore.PrivateKey
-adress     = privateKey.toAddress()
 
+bip38 = new Bip38()
+address         = privateKey.toAddress()
+alert "SET YOUR PASSWORD IN paperbank.coffee"
+privateKeyBip38 = bip38.encrypt privateKey.toWIF(), "", address.toString()
 
 makeQR(
   "qr_private_key",
-  privateKey.toWIF(),
+  privateKeyBip38,
 )
 
 makeQR(
   "qr_address",
-  adress.toString(),
+  address.toString(),
 )
 
 keyElem  = document.querySelector ".private_key_label"
 addrElem = document.querySelector ".address_label"
 
-keyElem.innerHTML  = privateKey.toWIF()
-addrElem.innerHTML = adress.toString()
+keyElem.innerHTML  = privateKeyBip38
+addrElem.innerHTML = address.toString()

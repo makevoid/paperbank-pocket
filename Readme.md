@@ -1,5 +1,17 @@
 # Paperbank Pocket
 
+BIP38 branch - TODO: put in master branch
+
+TODO: left to do:
+
+ADD a bip38 option that:
+
+- clears the screen (so you don't use / print the current qr codes)
+- let you choose a password (instead of an hardcoded one)
+- generates QR (bip38 has a progress api, use it maybe)
+- profit! :p
+
+
 ### Paper wallets / keychains using a Pocket Photo printer
 
 Now that Pocket Photo printers have become cheaper I decided to build a Paperbank-like Wallet / Keychain Generator using bitcore-lib and the qrcode library.
@@ -50,7 +62,7 @@ Then host it somewhere (for example with `python -m SimpleHTTPServer`, then visi
 Enjoy!
 
 ### Setup
-    
+
     npm i -g uglifyjs
 
     npm install

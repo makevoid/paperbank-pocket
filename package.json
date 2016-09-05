@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "bip38": "^1.4.0",
     "bitcore-lib": "^0.13.11",
     "davidshimjs-qrcodejs": "0.0.2"
   },
