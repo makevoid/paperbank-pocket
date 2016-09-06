@@ -38088,14 +38088,27 @@ promptForPassword = function(callback) {
 };
 
 generateQRs = function(address, privateKey, password) {
-  var addrElem, keyElem, privateKeyBip38;
-  privateKeyBip38 = bip38.encrypt(privateKey.toWIF(), password, address.toString());
-  makeQR("qr_private_key", privateKeyBip38);
-  makeQR("qr_address", address.toString());
-  keyElem = document.querySelector(".private_key_label");
-  addrElem = document.querySelector(".address_label");
-  keyElem.innerHTML = privateKeyBip38;
-  return addrElem.innerHTML = address.toString();
+  var progBar;
+  progBar = document.querySelector(".progress");
+  return setTimeout(function() {
+    var addrElem, keyElem, privateKeyBip38;
+    privateKeyBip38 = bip38.encrypt(privateKey.toWIF(), password, address.toString(), function(prog) {
+      var perc;
+      perc = Math.round(prog.percent);
+      progBar.style.width = perc + "%";
+      if (perc === 100) {
+        return setTimeout(function() {
+          return progBar.style.width = "0%";
+        }, 3000);
+      }
+    });
+    makeQR("qr_private_key", privateKeyBip38);
+    makeQR("qr_address", address.toString());
+    keyElem = document.querySelector(".private_key_label");
+    addrElem = document.querySelector(".address_label");
+    keyElem.innerHTML = privateKeyBip38;
+    return addrElem.innerHTML = address.toString();
+  }, 0);
 };
 
 regenerate = function(address, privateKey, password) {

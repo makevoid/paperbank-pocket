@@ -36,23 +36,35 @@ promptForPassword = (callback) ->
     promptForPassword callback
 
 generateQRs = (address, privateKey, password) ->
-  privateKeyBip38 = bip38.encrypt privateKey.toWIF(), password, address.toString()
+  progBar = document.querySelector ".progress"
+  setTimeout ->
+    privateKeyBip38 = bip38.encrypt privateKey.toWIF(), password, address.toString(), (prog) ->
+      perc = Math.round prog.percent
+      progBar.style.width = "#{perc}%"
 
-  makeQR(
-    "qr_private_key",
-    privateKeyBip38,
-  )
+      if perc == 100
+        setTimeout ->
+          progBar.style.width = "0%"
+        , 3000
 
-  makeQR(
-    "qr_address",
-    address.toString(),
-  )
+    makeQR(
+      "qr_private_key",
+      privateKeyBip38,
+    )
 
-  keyElem  = document.querySelector ".private_key_label"
-  addrElem = document.querySelector ".address_label"
+    makeQR(
+      "qr_address",
+      address.toString(),
+    )
 
-  keyElem.innerHTML  = privateKeyBip38
-  addrElem.innerHTML = address.toString()
+    keyElem  = document.querySelector ".private_key_label"
+    addrElem = document.querySelector ".address_label"
+
+    keyElem.innerHTML  = privateKeyBip38
+    addrElem.innerHTML = address.toString()
+  , 0
+
+
 
 regenerate = (address, privateKey, password) ->
   ->

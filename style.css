@@ -35,3 +35,10 @@ div.label {
   margin: 0 auto;
   text-align: center;
 }
+
+.progress {
+  width: 0%;
+  background: #09e;
+  height: 2px;
+  box-shadow: 0 0 7px #09e;
+}
