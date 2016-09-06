@@ -8,5 +8,5 @@ coffee -b -c make-qr.coffee   &&              \
   browserify --fast paperbank.js -o bundle.js
 
 
-# /usr/bin/time -f "minified in min %E seconds" uglifyjs bundle.js > bundle.min.js
-cp  bundle.js bundle.min.js # in dev
+/usr/bin/time -f "minified in min %E seconds" uglifyjs bundle.js > bundle.min.js
+# cp  bundle.js bundle.min.js # in dev
