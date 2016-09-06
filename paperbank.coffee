@@ -14,27 +14,56 @@
 makeQR  = require './make-qr'
 bitcore = require 'bitcore-lib'
 Bip38   = require 'bip38'
+bip38      = new Bip38()
 
-# generate key, derive address
-privateKey = new bitcore.PrivateKey
 
-bip38 = new Bip38()
-address         = privateKey.toAddress()
-alert "SET YOUR PASSWORD IN paperbank.coffee"
-privateKeyBip38 = bip38.encrypt privateKey.toWIF(), "", address.toString()
+main = ->
+  privateKey = new bitcore.PrivateKey
+  address    = privateKey.toAddress()
+  promptForPassword( (password) ->
+    generateQRs address, privateKey, password
+    bindRegenerate address, privateKey, password
+  )
 
-makeQR(
-  "qr_private_key",
-  privateKeyBip38,
-)
+promptForPassword = (callback) ->
+  password  = prompt "Choose a BIP38 Password to encrypt your paper wallet"
+  password2 = prompt "Confirm the BIP38 Password you chose"
 
-makeQR(
-  "qr_address",
-  address.toString(),
-)
+  if password && password == password2 && password != ""
+    callback password
+  else
+    alert "Password mismatch! Close this alert and try entering the password again."
+    promptForPassword callback
 
-keyElem  = document.querySelector ".private_key_label"
-addrElem = document.querySelector ".address_label"
+generateQRs = (address, privateKey, password) ->
+  privateKeyBip38 = bip38.encrypt privateKey.toWIF(), password, address.toString()
 
-keyElem.innerHTML  = privateKeyBip38
-addrElem.innerHTML = address.toString()
+  makeQR(
+    "qr_private_key",
+    privateKeyBip38,
+  )
+
+  makeQR(
+    "qr_address",
+    address.toString(),
+  )
+
+  keyElem  = document.querySelector ".private_key_label"
+  addrElem = document.querySelector ".address_label"
+
+  keyElem.innerHTML  = privateKeyBip38
+  addrElem.innerHTML = address.toString()
+
+regenerate = (address, privateKey, password) ->
+  ->
+    generateQRs address, privateKey, password
+
+bindRegenerate = (address, privateKey, password) ->
+  elem = document.querySelector "a.regenerate"
+  elem.addEventListener "click", regenerate(address, privateKey, password)
+
+
+# ---
+
+
+main()
