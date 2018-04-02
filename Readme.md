@@ -15,7 +15,7 @@ Then just plain HTML and CSS, screenshot and print how many Paper Keys / Paper W
 ### [Video](https://vimeo.com/156742301)
 
 <a href="https://vimeo.com/156742301">
-![Paperbank Pocket video - play](http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket_play_small.png)
+  <img src="http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket_play_small.png"/>
 </a>
 
 ### Screenshots
