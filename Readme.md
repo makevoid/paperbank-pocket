@@ -1,101 +1,121 @@
-# Paperbank Pocket
+# Paperbank Pocket 🎫
+> Generate paper wallets and keychains using Pocket Photo printers
 
-### Paper wallets / keychains using a Pocket Photo printer
+![Status](https://img.shields.io/badge/status-archived-orange)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
+## ⚠️ Project Status
+
+**This project is no longer maintained** (built several years ago as a beta). While it still functions, modern alternatives using AI-assisted development with React Native, Swift, or Kotlin with standard Web3 libraries are recommended.
+
+For serious cold storage needs, hardware wallets are the way to go. However, paper wallets remain useful for:
+- Small crypto gifts at events
+- Loyalty token distribution
+- Educational purposes
+- Quick offline backups
+
+## 📖 Overview
+
+Paperbank Pocket leverages affordable Pocket Photo printers to create physical Bitcoin paper wallets and keychains. The project combines web technologies with cryptocurrency standards to generate secure, printable wallets directly from your browser.
+
+### 🎥 Demo Video
+[![Paperbank Pocket Demo](http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket_play_small.png)](https://vimeo.com/156742301)
+
+## 🛠️ Tech Stack
+
+- **Crypto Libraries**: bitcore-lib, BIP38 encryption
+- **Frontend**: HTML, CSS, QR code generation
+- **Build Tools**: Browserify, CoffeeScript
+- **Development**: Node.js, UglifyJS
+
+## 🚀 Quick Start
+
+### Installation
+
+```bash
+# Install global dependencies
+npm i -g uglifyjs
+
+# Install project dependencies
+npm install
+```
+
+### Development
+
+```bash
+# Rebuild the bundle
+./build.sh
+
+# Start local server
+python -m SimpleHTTPServer 3000
+# or
+python3 -m http.server 3000
+```
+
+Visit `http://localhost:3000` in your browser.
+
+## 📱 How to Use
+
+1. **Generate**: Load the app - a key is automatically generated
+2. **Screenshot**: Capture the screen with your wallet
+3. **Print**: 
+   - Send screenshot to your Pocket Photo printer app
+   - Select "Fit Page" (not "Fill")
+   - Print your paper wallet!
+
+## 🔒 Security Considerations
+
+- **Self-host** for maximum security
+- **Regenerate bundle** using browserify before production use
+- **Use offline** - disconnect from internet when generating wallets
+- **BIP38 encryption** available for password-protected keys
+- Consider this for **small amounts only** - not for significant holdings
+
+## 🏗️ Deployment Options
+
+- **Static hosting**: Upload to any web server
+- **Local file**: Open `index.html` directly
+- **Mobile app**: Bundle with Cordova/PhoneGap
+- **Offline use**: Download and run locally
+
+## 🔄 Modern Alternatives
+
+If building today, consider:
+
+```javascript
+// React Native with Ethers.js (requires shims)
+npm install @ethersproject/shims ethers
+
+// Swift with Web3Swift
+pod 'web3swift'
+
+// Kotlin with Web3j
+implementation 'org.web3j:core:4.8.7'
+```
+
+## 🤝 Contributing
+
+While this project is archived, feel free to fork and adapt for your needs. The codebase serves as a reference implementation for paper wallet generation.
+
+## 📜 License
+
+MIT License - Use freely with attribution
+
+## 🙏 Acknowledgments
+
+- Original [Paperbank](http://paperbank.it) project
+- Built by [@makevoid](https://twitter.com/makevoid)
 
 ---
 
-Note: This project was built years ago, as a beta-version and **isn't maintained anymore**, even though it still works fine. 
-These days, you can just ask AI to code something similar in React Native, Swift, or Kotlin using standard web3 libraries like Ethers.js for React Native (though you'll need [shims](https://www.npmjs.com/package/@ethersproject/shims)), Web3Swift for Swift, etc. If you want a real cold storage solution, obviously go with hardware wallets. That said, paper wallets are still pretty handy for small gifts - like giving someone a bit of crypto or a loyalty token at an event.
+### 💡 Fun Ideas for Extension
+
+- NFC chip integration for hybrid paper-digital wallets
+- Multi-currency support (ETH, other ERC-20 tokens)
+- Batch generation for events
+- Custom branding/themes
+- Mobile-first responsive design
 
 ---
 
-
-Now that Pocket Photo printers have become cheaper I decided to build a Paperbank-like Wallet / Keychain Generator using bitcore-lib and the qrcode library.
-
-Other cool things used:
-
-- BIP38
-- Coffeescript
-- Browserify
-
-Then just plain HTML and CSS, screenshot and print how many Paper Keys / Paper Wallets you like!
-
-### [Video](https://vimeo.com/156742301)
-
-<a href="https://vimeo.com/156742301">
-  <img src="http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket_play_small.png"/>
-</a>
-
-### Screenshots
-
-1 - Load the app, a key has been generated for you, now **take a screenshot** and **send it to the Printer app**
-
-2 - Select "Fit Page" (instead of "Fill")
-
-3 - Start to print!
-
-
-or
-
-#### Host the project yourself
-
-Host the project yourself, re-generate the bundle using browserify for extra security or if you want to make modifications (`./build.sh`)
-Then host it somewhere (for example with `python -m SimpleHTTPServer`, then visit <http://localhost:8000>), bundle it in a phonegap/cordova/webview app or simply open `index.html` !
-
-Enjoy!
-
-### Setup
-    
-    npm i -g uglifyjs
-
-    npm install
-
-### Rebuild
-
-    ./build.sh
-
-### Host (run)
-
-    python -m SimpleHTTPServer 3000
-
-then visit <http://localhost:3000>
-or (bind to any address):
-
-    python -c 'import BaseHTTPServer as bhs, SimpleHTTPServer as shs; bhs.HTTPServer((\"0.0.0.0\", 3000), shs.SimpleHTTPRequestHandler).serve_forever()'
-
-or simply open `index.html`
-
----
-
-### Other Infos on Why
-
-This project is meant to be used with Pocket Photo Printers like the one shown in this amazon uk search:
-
-https://www.amazon.co.uk/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=pocket+photo+printer
-
-I got mine for ~70 gbp (99$) on aliexpress: http://www.aliexpress.com/item/Pocket-Photo-Printer-PoPo-Pocket-Photo-2-PD239-NO-NEED-INK-Mini-Portable-Mobile-Photo-Printer/32516573659.html
-
-I reckon the price of those will drop even more next years.
-
-The paper is not cheap (10-20p per sheet) but the good thing is that the ink is inside the paper, so you just need to get the paper. You have to use Zink paper of the same size of the printer.
-
-I found it awesome!
-
-Bare in mind it's still thermal paper so don't leave under direct sunlight and you don't have to expose it under heat, you can laminate it some way but not with hot lamination, to make it water-resistant.
-
-Also, after I'm done with creating my paper wallets I bring it with me to use it with my phone basically as a Polaroid. I take photos of friends and give them the photo as a present. The cool thing is that the software from the one I have lets you embed QR codes, so I upload the picture I took on S3 and put the link in the qr code on the photo itself, pretty cool, but enough for the promo of this gadget, let's make paper wallets!
-
-Remember that it's best to generate the key while the devices are off the internet and to delete all the copies of the screenshot taken on the device.
-
-### TODO:
-
-Features coming:
-
-- BIP38
-
-like in the original paperbank.
-
-
-original paperbank project: http://paperbank.it
-
-#### by [@makevoid](https://twitter.com/makevoid)
+*Remember: Paper wallets are great for gifts and demos, but for serious crypto storage, use hardware wallets!* 🔐
