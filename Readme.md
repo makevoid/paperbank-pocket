@@ -1,6 +1,10 @@
 # Paperbank Pocket 🎫
 > Generate paper wallets and keychains using Pocket Photo printers
 
+
+### 🎥 Demo Video
+[![Paperbank Pocket Demo](http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket_play_small.png)](https://vimeo.com/156742301)
+
 ![Status](https://img.shields.io/badge/status-archived-orange)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
@@ -18,8 +22,6 @@ For serious cold storage needs, hardware wallets are the way to go. However, pap
 
 Paperbank Pocket leverages affordable Pocket Photo printers to create physical Bitcoin paper wallets and keychains. The project combines web technologies with cryptocurrency standards to generate secure, printable wallets directly from your browser.
 
-### 🎥 Demo Video
-[![Paperbank Pocket Demo](http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket_play_small.png)](https://vimeo.com/156742301)
 
 ## 🛠️ Tech Stack
 
