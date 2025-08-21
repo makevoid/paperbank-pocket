@@ -30,23 +30,10 @@ Then just plain HTML and CSS, screenshot and print how many Paper Keys / Paper W
 
 1 - Load the app, a key has been generated for you, now **take a screenshot** and **send it to the Printer app**
 
-<a href="http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket1.mp4">
-![step1 - screenshot](http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket_small1.png)
-</a>
-<a href="http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket2.mp4">
-![step2 - screenshot](http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket_small2.png)
-</a>
-<a href="http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket3.mp4">
-![step3 - screenshot](http://mkvphoto.s3.amazonaws.com/paperbank_pocket/paperbank_pocket_small3b.png)
-</a>
-
 2 - Select "Fit Page" (instead of "Fill")
 
 3 - Start to print!
 
-### Try / Use this project:
-
-#### http://pocket.paperbank.it/
 
 or
 
@@ -112,12 +99,3 @@ like in the original paperbank.
 original paperbank project: http://paperbank.it
 
 #### by [@makevoid](https://twitter.com/makevoid)
-
-
-----
-
-ps
-
-advices to new programmers that want to create bitcoin apps: put a project down (php, html, js wathever but put it down on code on a repo), then leave it alone, look at bitcoin for a while then after some time look again at your project, you will see the possibilities in modifiying it, to adapt your app, your project, your code to new purposes !
-
-notes to other people: bluetooth controlled printer + web browser is an infinitely, incommensurable thing, check more in the pbd book (soon™...)
