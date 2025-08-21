@@ -2,6 +2,13 @@
 
 ### Paper wallets / keychains using a Pocket Photo printer
 
+---
+
+Note: This project was made many years ago as proof of concept and is not maintained, nowadays you can ask AI to code a similar solution in React Native / Swift / Kotlin directly using standard web3 libraries as Ethers.js for React Native (note, needs [shims](https://www.npmjs.com/package/@ethersproject/shims)), Web3Swift for Swift etc.
+
+---
+
+
 Now that Pocket Photo printers have become cheaper I decided to build a Paperbank-like Wallet / Keychain Generator using bitcore-lib and the qrcode library.
 
 Other cool things used:
