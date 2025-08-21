@@ -4,7 +4,8 @@
 
 ---
 
-Note: This project was made many years ago as proof of concept and is **not maintained, despite still fully working** after quite a while. Nowadays you can ask AI to code a similar solution in React Native / Swift / Kotlin directly using standard web3 libraries as Ethers.js for React Native (note, needs [shims](https://www.npmjs.com/package/@ethersproject/shims)), Web3Swift for Swift etc. If you are looking at real cold storage solution of course, use hardware wallets. Note that paper wallets are still good for small gifts (e.g. of a small amount of crypto or a loyalty token given at an event, etc).
+Note: This project was built years ago, as a beta-version and **isn't maintained anymore**, even though it still works fine. 
+These days, you can just ask AI to code something similar in React Native, Swift, or Kotlin using standard web3 libraries like Ethers.js for React Native (though you'll need [shims](https://www.npmjs.com/package/@ethersproject/shims)), Web3Swift for Swift, etc. If you want a real cold storage solution, obviously go with hardware wallets. That said, paper wallets are still pretty handy for small gifts - like giving someone a bit of crypto or a loyalty token at an event.
 
 ---
 
